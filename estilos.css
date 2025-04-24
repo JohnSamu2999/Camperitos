@@ -1,0 +1,104 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fffef2;
+}
+
+.encabezado {
+    background-color: #fdb813;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+}
+
+.logo {
+    height: 60px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #5a2b0c;
+    font-weight: bold;
+}
+
+.banner img {
+    width: 100%;
+    display: block;
+}
+
+.bienvenida {
+    text-align: center;
+    background-color: #fff3d0;
+    padding: 30px;
+}
+
+.btn {
+    padding: 10px 25px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.verde {
+    background-color: #a7c002;
+    color: #000;
+}
+
+.naranja {
+    background-color: #f26c23;
+    color: white;
+}
+
+.categorias {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 30px;
+    gap: 30px;
+}
+
+.categoria {
+    width: 250px;
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.categoria img {
+    width: 100%;
+}
+
+.pie {
+    background-color: #d5cb4b;
+    padding: 40px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    color: #4d2b13;
+    text-align: center;
+}
+
+.pie input[type="email"] {
+    padding: 8px;
+    width: 200px;
+    border: none;
+    margin-right: 10px;
+}
+
+.legales a {
+    color: #4d2b13;
+    margin: 0 5px;
+    text-decoration: none;
+}
