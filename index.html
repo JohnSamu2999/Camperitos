@@ -38,13 +38,18 @@
     <p>&copy; 2025 Pollo Campero. Todos los derechos reservados.</p>
   </footer>
 
-  <script>
-    const boton = document.getElementById("mostrarMenu");
-    const menu = document.getElementById("menuOpciones");
-
-    boton.addEventListener("click", () => {
-      menu.classList.toggle("oculto");
-    });
+ <script>
+  document.getElementById("mostrarMenu").addEventListener("click", function() {
+    var menu = document.getElementById("menu");
+    if (menu.classList.contains("menu-oculto")) {
+      menu.classList.remove("menu-oculto");
+      menu.classList.add("menu-visible");
+    } else {
+      menu.classList.remove("menu-visible");
+      menu.classList.add("menu-oculto");
+    }
+  });
+</script>
   </script>
 </body>
 </html>
