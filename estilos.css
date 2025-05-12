@@ -1,104 +1,71 @@
 body {
-    font-family: 'Segoe UI', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #fffef2;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-.encabezado {
-    background-color: #fdb813;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 40px;
+.barra-amarilla {
+  background-color: #FFD700;
+  padding: 10px;
+  text-align: center;
 }
 
-.logo {
-    height: 160px;
+.menu-container {
+  text-align: center;
+  margin: 10px 0;
 }
 
-.menu {
-    list-style: none;
-    display: flex;
-    gap: 30px;
+.menu-container button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #cc0000;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-.menu li a {
-    text-decoration: none;
-    color: #5a2b0c;
-    font-weight: bold;
+.secciones {
+  margin-top: 10px;
 }
 
-.banner img {
-    width: 100%;
-    display: block;
+.secciones a {
+  display: block;
+  margin: 5px 0;
+  text-decoration: none;
+  color: #cc0000;
 }
 
-.bienvenida {
-    text-align: center;
-    background-color: #fff3d0;
-    padding: 30px;
+.oculto {
+  display: none;
 }
 
-.btn {
-    padding: 10px 25px;
-    border: none;
-    cursor: pointer;
-    font-weight: bold;
-    margin: 10px;
-    border-radius: 5px;
+.productos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  gap: 20px;
 }
 
-.verde {
-    background-color: #a7c002;
-    color: #000;
+.producto {
+  width: 200px;
+  background-color: #fff3e6;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+  text-align: center;
 }
 
-.naranja {
-    background-color: #f26c23;
-    color: white;
+.producto img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
 }
 
-.categorias {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 30px;
-    gap: 30px;
+footer {
+  background-color: #eee;
+  padding: 20px;
+  text-align: center;
 }
 
-.categoria {
-    width: 250px;
-    text-align: center;
-    background-color: white;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-.categoria img {
-    width: 100%;
-}
-
-.pie {
-    background-color: #d5cb4b;
-    padding: 40px;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    color: #4d2b13;
-    text-align: center;
-}
-
-.pie input[type="email"] {
-    padding: 8px;
-    width: 200px;
-    border: none;
-    margin-right: 10px;
-}
-
-.legales a {
-    color: #4d2b13;
-    margin: 0 5px;
-    text-decoration: none;
-}
