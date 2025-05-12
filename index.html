@@ -1,86 +1,72 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Pollo Campero</title>
-  <link rel="stylesheet" href="estilos.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pollo Campero</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-  <header class="encabezado">
-    <img src="logo.png" alt="Logo" class="logo">
-    <button id="mostrarMenu" class="hamburguesa">&#9776;</button>
-    <nav id="menu" class="menu menu-oculto">
-      <a href="#">Consultar</a>
-      <a href="#">Ordenar</a>
-      <a href="#">Cupones</a>
-      <a href="#">Redes Sociales</a>
-    </nav>
-  </header>
-
-  <section class="banner">
-    <img src="banquete-camarones.png" alt="Banquete de camarones" class="banner-img">
-  </section>
-
-  <section class="seleccion-comida">
-    <h2>Elige tu menú favorito</h2>
-    <div class="tarjetas">
-      <div class="tarjeta">
-        <img src="verano.png" alt="Verano Campero">
-        <div class="info">
-          <h3>Verano Campero</h3>
-          <p>Una explosión de sabor para los días calurosos.</p>
-          <button class="btn verde">Seleccionar</button>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Pollo Campero">
         </div>
-      </div>
-      <div class="tarjeta">
-        <img src="pizza.png" alt="Pizza Campero">
-        <div class="info">
-          <h3>Pizza Campero</h3>
-          <p>Deliciosa pizza con el toque único de Campero.</p>
-          <button class="btn verde">Seleccionar</button>
+        <button class="menu-toggle" onclick="toggleMenu()">
+            &#9776;
+        </button>
+        <nav id="nav-menu">
+            <a href="#menu">Menú</a>
+            <a href="#promociones">Promociones</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <div class="banner">
+        <img src="banner.png" alt="Promoción Camarones">
+    </div>
+
+    <main>
+        <h2>Elige tu menú favorito</h2>
+        <div class="menu-container">
+            <div class="menu-item">
+                <img src="verano_campero.png" alt="Verano Campero">
+                <h3>Verano Campero</h3>
+                <p>Una explosión de sabor para los días calurosos.</p>
+                <button>Seleccionar</button>
+            </div>
+            <div class="menu-item">
+                <img src="pizza_campero.png" alt="Pizza Campero">
+                <h3>Pizza Campero</h3>
+                <p>Deliciosa pizza con el toque único de Campero.</p>
+                <button>Seleccionar</button>
+            </div>
+            <div class="menu-item">
+                <img src="pollo.png" alt="Pollo Campero">
+                <h3>Pollo</h3>
+                <p>Clásico, crujiente y jugoso. ¡Siempre favorito!</p>
+                <button>Seleccionar</button>
+            </div>
         </div>
-      </div>
-      <div class="tarjeta">
-        <img src="pollo.png" alt="Pollo">
-        <div class="info">
-          <h3>Pollo</h3>
-          <p>Clásico, crujiente y jugoso. ¡Siempre favorito!</p>
-          <button class="btn verde">Seleccionar</button>
+    </main>
+
+    <footer>
+        <p>Nuestro sabor está donde tú estés</p>
+        <form>
+            <input type="email" placeholder="Introduce tu correo">
+            <button type="submit">Registrate</button>
+        </form>
+        <div>
+            <a href="#">Política de privacidad</a>
+            <a href="#">Términos y condiciones</a>
+            <a href="#">FAQ</a>
         </div>
-      </div>
-    </div>
-  </section>
+    </footer>
 
-  <footer class="pie">
-    <div class="texto-footer">
-      <p>Nuestro sabor está donde tú estés</p>
-    </div>
-    <div class="registro-footer">
-      <input type="email" placeholder="Introduce tu correo">
-      <button class="btn naranja">Regístrate</button>
-    </div>
-    <div class="legales">
-      <a href="#">Política de privacidad</a> |
-      <a href="#">Términos y condiciones</a> |
-      <a href="#">FAQ</a>
-    </div>
-  </footer>
-
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const boton = document.getElementById("mostrarMenu");
-      const menu = document.getElementById("menu");
-
-      boton.addEventListener("click", function () {
-        menu.classList.toggle("menu-oculto");
-        menu.classList.toggle("menu-visible");
-      });
-    });
-  </script>
-
+    <script>
+        function toggleMenu() {
+            const nav = document.getElementById('nav-menu');
+            nav.classList.toggle('show');
+        }
+    </script>
 </body>
 </html>
-
-
