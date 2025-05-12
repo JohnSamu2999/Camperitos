@@ -1,18 +1,57 @@
-/* Fondo general más claro */
+/* Estilos generales */
 body {
   background-color: #fffde8;
   margin: 0;
   font-family: sans-serif;
 }
 
+/* Botón hamburguesa */
+.hamburguesa {
+  font-size: 28px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+/* Menú oculto/visible */
+.menu {
+  display: flex;
+  flex-direction: column;
+  background-color: #f8c300;
+  position: absolute;
+  right: 20px;
+  top: 60px;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #999;
+}
+
+.menu-oculto {
+  display: none;
+}
+
+.menu-visible {
+  display: flex;
+}
+
 /* Imagen del banner más pequeña */
 .banner-img {
   width: 100%;
-  max-height: 200px; /* antes era 300px */
+  max-height: 200px; /* reducido de 300px a 200px */
   object-fit: cover;
 }
 
-/* Tarjetas organizadas horizontalmente y centradas */
+/* Título de sección */
+.seleccion-comida h2 {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 24px;
+}
+
+/* Tarjetas organizadas horizontalmente y con diseño limpio */
 .tarjetas {
   display: flex;
   justify-content: center;
@@ -22,7 +61,7 @@ body {
 }
 
 .tarjeta {
-  width: 300px;
+  width: 280px;
   background: #fff3d1;
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
@@ -45,6 +84,7 @@ body {
   padding: 15px;
 }
 
+/* Botón estilo verde */
 .btn.verde {
   background-color: #3c763d;
   color: white;
@@ -57,3 +97,47 @@ body {
 .btn.verde:hover {
   background-color: #2e5a2f;
 }
+
+/* Botón estilo naranja (footer) */
+.btn.naranja {
+  background-color: #f4511e;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn.naranja:hover {
+  background-color: #d63b0e;
+}
+
+/* Footer */
+.pie {
+  background-color: #d9c93f;
+  padding: 20px;
+  text-align: center;
+}
+
+.texto-footer {
+  margin-bottom: 10px;
+}
+
+.registro-footer input[type="email"] {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  width: 200px;
+}
+
+.legales {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.legales a {
+  color: #333;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
