@@ -73,3 +73,40 @@ footer {
   text-align: center;
 }
 
+.hamburguesa {
+  font-size: 30px;
+  background-color: #fff3e6;
+  border: 2px solid #cc0000;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #cc0000;
+  padding: 10px 15px;
+  margin: 10px;
+}
+
+
+.menu-oculto {
+  display: none;
+}
+
+.menu-visible {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff3e6;
+  border: 1px solid #cc0000;
+  padding: 10px;
+  margin-top: 5px;
+}
+
+.menu-visible a {
+  text-decoration: none;
+  color: #cc0000;
+  padding: 5px 0;
+  font-weight: bold;
+}
+
+.menu-visible a:hover {
+  color: #ff6600;
+}
+
+
