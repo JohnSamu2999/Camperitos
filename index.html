@@ -1,56 +1,79 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Campero</title>
-  <link rel="stylesheet" href="estilos.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pollo Campero</title>
+  <link rel="stylesheet" href="estilos.css" />
 </head>
 <body>
 
- 
-  <div class="barra-amarilla">¡Bienvenido a Pollo Campero!</div>
+  <header class="encabezado">
+    <img src="logo.png" alt="Logo" class="logo">
+  </header>
 
-  <<div class="menu-container">
-  <button id="mostrarMenu" class="hamburguesa">&#9776;</button>
-  <div id="menu" class="menu-oculto">
-    <a href="#">Consultar</a>
-    <a href="#">Ordenar</a>
-    <a href="#">Cupones</a>
-    <a href="#">Redes Sociales</a>
-  </div>
-</div>
-
-
-  <!-- Contenedor de productos -->
-  <div class="productos">
-    <div class="producto">
-      <img src="https://via.placeholder.com/200x150" alt="Producto 1">
-      <p>Combo Campero</p>
-    </div>
-    <div class="producto">
-      <img src="https://via.placeholder.com/200x150" alt="Producto 2">
-      <p>Alitas BBQ</p>
+  <!-- Botón y menú hamburguesa -->
+  <div class="menu-container">
+    <button id="mostrarMenu" class="hamburguesa">&#9776;</button>
+    <div id="menu" class="menu menu-oculto">
+      <a href="#">Consultar</a>
+      <a href="#">Ordenar</a>
+      <a href="#">Cupones</a>
+      <a href="#">Redes Sociales</a>
     </div>
   </div>
 
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 Pollo Campero. Todos los derechos reservados.</p>
+  <section class="banner">
+    <img src="banquete-camarones.png" alt="Banquete de camarones">
+  </section>
+
+  <section class="categorias">
+    <div class="categoria">
+      <img src="verano.png" alt="Verano Campero">
+      <h3>Verano Campero</h3>
+      <button class="btn verde">Selecciona</button>
+    </div>
+    <div class="categoria">
+      <img src="pizza.png" alt="Pizza Campero">
+      <h3>Pizza Campero</h3>
+      <button class="btn verde">Selecciona</button>
+    </div>
+    <div class="categoria">
+      <img src="pollo.png" alt="Pollo">
+      <h3>Pollo</h3>
+      <button class="btn verde">Selecciona</button>
+    </div>
+  </section>
+
+  <footer class="pie">
+    <div class="texto-footer">
+      <p>Nuestro sabor está donde tú estés</p>
+    </div>
+    <div class="registro-footer">
+      <input type="email" placeholder="Introduce tu correo">
+      <button class="btn naranja">Regístrate</button>
+    </div>
+    <div class="legales">
+      <a href="#">Política de privacidad</a> |
+      <a href="#">Términos y condiciones</a> |
+      <a href="#">FAQ</a>
+    </div>
   </footer>
 
- <script>
-  document.addEventListener("DOMContentLoaded", function() {
-    const boton = document.getElementById("mostrarMenu");
-    const menu = document.getElementById("menu");
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const boton = document.getElementById("mostrarMenu");
+      const menu = document.getElementById("menu");
 
-    boton.addEventListener("click", function () {
-      menu.classList.toggle("menu-oculto");
-      menu.classList.toggle("menu-visible");
+      boton.addEventListener("click", function () {
+        menu.classList.toggle("menu-oculto");
+        menu.classList.toggle("menu-visible");
+      });
     });
-  });
-</script>
+  </script>
 
 </body>
 </html>
+
 
 
