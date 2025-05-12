@@ -1,76 +1,56 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pollo Campero</title>
-    <link rel="stylesheet" href="estilos.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Campero</title>
+  <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
+  <header class="barra-amarilla">
+    <h1>Mi Campero</h1>
+  </header>
 
-   
-    <header class="encabezado">
-        <img src="logo.png" alt="Logo" class="logo">
-        <nav>
-            <ul class="menu">
-                
-                <li><a href="#">Consulta</a></li>
-                <li><a href="#">Ordenar</a></li>
-                <li><a href="#">Cupones</a></li>
-            </ul>
-        </nav>
-    </header>
+  <nav class="menu-container">
+    <button id="toggleSecciones">Menú</button>
+    <div id="secciones" class="secciones oculto">
+      <a href="#consulta">Consulta</a>
+      <a href="#ordenar">Ordenar</a>
+      <a href="#cupones">Cupones</a>
+      <a href="#redes">Redes Sociales</a>
+    </div>
+  </nav>
 
-    <section class="banner">
-        <img src="banquete-camarones.png" alt="Banquete de camarones">
-    </section>
-    
-    <section class="bienvenida">
-        <h2>Bienvenido a Pollo Campero</h2>
-        <button class="btn verde">Iniciar sesión</button>
-        <button class="btn naranja">Regístrate</button>
-    </section>
+  <main class="productos">
+    <div class="producto">
+      <img src="img/pollo1.jpg" alt="Pollo Frito">
+      <h2>Combo Familiar</h2>
+      <p>Delicioso pollo crujiente con papas y bebida</p>
+      <span>$12.99</span>
+    </div>
+    <div class="producto">
+      <img src="img/pollo2.jpg" alt="Hamburguesa">
+      <h2>Hamburguesa Clásica</h2>
+      <p>Con queso derretido y papas fritas</p>
+      <span>$7.99</span>
+    </div>
+    <!-- Más productos -->
+  </main>
 
-    <section class="categorias">
-        <div class="categoria">
-            <img src="verano.png" alt="Verano Campero">
-            <h3>Verano Campero</h3>
-            <button class="btn verde">Selecciona</button>
-        </div>
-        <div class="categoria">
-            <img src="pizza.png" alt="Pizza Campero">
-            <h3>Pizza Campero</h3>
-            <button class="btn verde">Selecciona</button>
-        </div>
-        <div class="categoria">
-            <img src="pollo.png" alt="Pollo">
-            <h3>Pollo</h3>
-            <button class="btn verde">Selecciona</button>
-        </div>
-        
-    </section>
+  <footer id="redes">
+    <h3>Síguenos en redes:</h3>
+    <a href="#">Facebook</a> |
+    <a href="#">Instagram</a> |
+    <a href="#">TikTok</a>
+  </footer>
 
-  
-    <footer class="pie">
-        <div class="texto-footer">
-            <p>Nuestro sabor está donde tú estés</p>
-            <div class="redes">
-                <a href="#"></a>
-                <a href="#"></a>
-                <a href="#"></a>
-            </div>
-        </div>
-        <div class="registro-footer">
-            <input type="email" placeholder="Introduce tu correo">
-            <button class="btn naranja">Regístrate</button>
-        </div>
-        <div class="legales">
-            <a href="#">Política de privacidad</a> |
-            <a href="#">Términos y condiciones</a> |
-            <a href="#">FAQ</a>
-        </div>
-    </footer>
-
+  <script>
+    const btn = document.getElementById('toggleSecciones');
+    const secciones = document.getElementById('secciones');
+    btn.addEventListener('click', () => {
+      secciones.classList.toggle('oculto');
+    });
+  </script>
 </body>
 </html>
+
