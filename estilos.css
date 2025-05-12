@@ -2,12 +2,15 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  background-color: #fffaf0;
 }
 
 .barra-amarilla {
   background-color: #FFD700;
   padding: 10px;
   text-align: center;
+  font-size: 24px;
+  font-weight: bold;
 }
 
 .menu-container {
@@ -34,6 +37,7 @@ body {
   margin: 5px 0;
   text-decoration: none;
   color: #cc0000;
+  font-weight: bold;
 }
 
 .oculto {
