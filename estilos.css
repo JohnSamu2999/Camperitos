@@ -73,22 +73,32 @@ footer {
   text-align: center;
 }
 
+/* Contenedor alineado a la derecha */
+.menu-container {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  text-align: right;
+  z-index: 999;
+}
+
+/* Botón estilo hamburguesa */
 .hamburguesa {
-  font-size: 30px;
+  font-size: 28px;
   background-color: #fff3e6;
   border: 2px solid #cc0000;
   border-radius: 8px;
   cursor: pointer;
   color: #cc0000;
   padding: 10px 15px;
-  margin: 10px;
 }
 
-
+/* Menú oculto por defecto */
 .menu-oculto {
   display: none;
 }
 
+/* Menú visible */
 .menu-visible {
   display: flex;
   flex-direction: column;
@@ -96,17 +106,18 @@ footer {
   border: 1px solid #cc0000;
   padding: 10px;
   margin-top: 5px;
+  width: 150px;
 }
 
+/* Enlaces del menú */
 .menu-visible a {
   text-decoration: none;
   color: #cc0000;
   padding: 5px 0;
   font-weight: bold;
+  transition: 0.2s ease;
 }
 
 .menu-visible a:hover {
   color: #ff6600;
 }
-
-
