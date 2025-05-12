@@ -1,4 +1,4 @@
-/* Estilos generales */
+/* General */
 body {
   background-color: #fffde8;
   margin: 0;
@@ -16,7 +16,7 @@ body {
   right: 20px;
 }
 
-/* Menú oculto/visible */
+/* Menú hamburguesa */
 .menu {
   display: flex;
   flex-direction: column;
@@ -37,37 +37,51 @@ body {
   display: flex;
 }
 
-/* Imagen del banner más pequeña */
+/* Imagen del banner con altura reducida */
 .banner-img {
   width: 100%;
-  max-height: 200px; /* reducido de 300px a 200px */
+  max-height: 200px; /* antes era 300px */
   object-fit: cover;
 }
 
-/* Título de sección */
-.seleccion-comida h2 {
-  text-align: center;
-  margin-top: 30px;
-  font-size: 24px;
+/* Encabezado */
+.encabezado {
+  background-color: #f8c300;
+  padding: 10px;
 }
 
-/* Tarjetas organizadas horizontalmente y con diseño limpio */
+.logo {
+  height: 40px;
+}
+
+/* Sección de selección de comida */
+.seleccion-comida {
+  padding: 30px 20px;
+}
+
+.seleccion-comida h2 {
+  text-align: center;
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+/* Tarjetas en fila (horizontal) */
 .tarjetas {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
   gap: 20px;
-  padding: 20px;
+  flex-wrap: wrap;
+  padding: 0 20px;
 }
 
 .tarjeta {
-  width: 280px;
   background: #fff3d1;
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   overflow: hidden;
   text-align: center;
   transition: transform 0.2s;
+  width: 280px;
 }
 
 .tarjeta:hover {
@@ -84,28 +98,27 @@ body {
   padding: 15px;
 }
 
-/* Botón estilo verde */
-.btn.verde {
-  background-color: #3c763d;
-  color: white;
+/* Botones */
+.btn {
+  font-weight: bold;
   padding: 10px;
   border: none;
   border-radius: 6px;
   cursor: pointer;
+}
+
+.btn.verde {
+  background-color: #3c763d;
+  color: white;
 }
 
 .btn.verde:hover {
   background-color: #2e5a2f;
 }
 
-/* Botón estilo naranja (footer) */
 .btn.naranja {
   background-color: #f4511e;
   color: white;
-  padding: 10px;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
 }
 
 .btn.naranja:hover {
@@ -121,6 +134,11 @@ body {
 
 .texto-footer {
   margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.registro-footer {
+  margin: 10px 0;
 }
 
 .registro-footer input[type="email"] {
@@ -128,6 +146,7 @@ body {
   border: none;
   border-radius: 4px;
   width: 200px;
+  max-width: 80%;
 }
 
 .legales {
@@ -141,3 +160,6 @@ body {
   margin: 0 5px;
 }
 
+.legales a:hover {
+  text-decoration: underline;
+}
