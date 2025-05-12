@@ -1,20 +1,17 @@
-/* Estilos generales */
-/* Restauración completa del CSS original con mejoras integradas */
-
 body {
-    font-family: Arial, sans-serif;
-    background-color: #fffbe6;
     margin: 0;
-    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fffbe6;
     color: #333;
 }
 
 header {
-    background-color: #ffcb05;
-    padding: 10px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 10px 20px;
+    background-color: #fffbe6;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .logo img {
@@ -22,25 +19,35 @@ header {
 }
 
 .menu-toggle {
-    background-color: #ff7f00;
-    border: none;
-    color: white;
     font-size: 24px;
+    background-color: orange;
+    color: white;
+    border: none;
     cursor: pointer;
-    padding: 5px 10px;
+    padding: 10px;
     border-radius: 5px;
 }
 
-.banner {
-    width: 100%;
-    max-height: 200px;
-    overflow: hidden;
-    margin-bottom: 20px;
+nav {
+    display: none;
+}
+
+nav.show {
+    display: block;
+}
+
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
 }
 
 .banner img {
     width: 100%;
-    height: auto;
+    max-height: 250px;
+    object-fit: cover;
+    display: block;
 }
 
 main {
@@ -50,98 +57,97 @@ main {
 
 .menu-container {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
+    flex-wrap: wrap;
     margin-top: 20px;
 }
 
 .menu-item {
     background-color: #fff2cc;
-    border-radius: 10px;
+    border-radius: 12px;
+    padding: 20px;
+    width: 280px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 250px;
-    transition: transform 0.3s ease;
-    padding-bottom: 20px;
+    transition: transform 0.2s ease-in-out;
 }
 
 .menu-item:hover {
-    transform: translateY(-5px);
+    transform: scale(1.03);
 }
 
 .menu-item img {
     width: 100%;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    height: auto;
+    border-radius: 8px;
 }
 
 .menu-item h3 {
-    margin: 10px 0 5px;
-    font-size: 18px;
-    color: #000;
-}
-
-.menu-item p {
-    font-size: 14px;
-    margin: 0 10px 10px;
-    color: #333;
+    margin-top: 10px;
+    color: #994d00;
 }
 
 .menu-item button {
-    background-color: #4CAF50;
+    background-color: #339933;
     color: white;
     border: none;
-    padding: 8px 16px;
+    padding: 10px 20px;
     margin-top: 10px;
-    cursor: pointer;
     border-radius: 5px;
-    transition: background-color 0.3s ease;
+    cursor: pointer;
 }
 
 .menu-item button:hover {
-    background-color: #45a049;
+    background-color: #2a7a2a;
 }
 
 footer {
-    background-color: #e0c341;
+    background-color: #ded15c;
     padding: 20px;
     text-align: center;
+    margin-top: 40px;
     font-size: 14px;
-    color: #333;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
+}
+
+footer form {
+    margin-top: 10px;
 }
 
 footer input[type="email"] {
-    padding: 6px;
+    padding: 8px;
     border: 1px solid #ccc;
-    border-radius: 4px;
-    margin-right: 10px;
+    border-radius: 5px;
+    width: 200px;
 }
 
 footer button {
-    background-color: #f25c05;
+    padding: 8px 12px;
+    background-color: #ff6600;
     color: white;
     border: none;
-    padding: 6px 12px;
-    border-radius: 4px;
+    border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    margin-left: 5px;
 }
 
 footer button:hover {
-    background-color: #c44d04;
+    background-color: #cc5200;
 }
 
-footer a {
+footer div a {
+    margin: 0 10px;
     color: #333;
     text-decoration: none;
-    margin: 0 5px;
+    display: inline-block;
+    margin-top: 10px;
 }
 
-footer a:hover {
-    text-decoration: underline;
-}
+@media (min-width: 768px) {
+    nav {
+        display: flex !important;
+    }
 
+    .menu-toggle {
+        display: none;
+    }
+}
