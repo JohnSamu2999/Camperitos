@@ -2,55 +2,53 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mi Campero</title>
+  <title>Mi Página de Pollo</title>
   <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-  <header class="barra-amarilla">
-    <h1>Mi Campero</h1>
-  </header>
 
-  <nav class="menu-container">
-    <button id="toggleSecciones">Menú</button>
-    <div id="secciones" class="secciones oculto">
-      <a href="#consulta">Consulta</a>
-      <a href="#ordenar">Ordenar</a>
-      <a href="#cupones">Cupones</a>
-      <a href="#redes">Redes Sociales</a>
-    </div>
-  </nav>
+  <!-- Barra amarilla -->
+  <div class="barra-amarilla">¡Bienvenido a Pollo Rico!</div>
 
-  <main class="productos">
+  <!-- Botón principal que muestra el menú -->
+  <div class="menu-container">
+    <button id="mostrarMenu">Menú</button>
+  </div>
+
+  <!-- Secciones ocultas -->
+  <div id="menuOpciones" class="secciones oculto">
+    <a href="#">Consulta</a>
+    <a href="#">Ordenar</a>
+    <a href="#">Cupones</a>
+    <a href="#">Redes Sociales</a>
+  </div>
+
+  <!-- Contenedor de productos -->
+  <div class="productos">
     <div class="producto">
-      <img src="pollo1.jpg" alt="Pollo Frito">
-      <h2>Combo Familiar</h2>
-      <p>Delicioso pollo crujiente con papas y bebida</p>
-      <span>$12.99</span>
+      <img src="https://via.placeholder.com/200x150" alt="Producto 1">
+      <p>Combo Campero</p>
     </div>
     <div class="producto">
-      <img src="pollo2.jpg" alt="Hamburguesa">
-      <h2>Hamburguesa Clásica</h2>
-      <p>Con queso derretido y papas fritas</p>
-      <span>$7.99</span>
+      <img src="https://via.placeholder.com/200x150" alt="Producto 2">
+      <p>Alitas BBQ</p>
     </div>
-  
-  </main>
+  </div>
 
-  <footer id="redes">
-    <h3>Síguenos en redes:</h3>
-    <a href="#">Facebook</a> |
-    <a href="#">Instagram</a> |
-    <a href="#">TikTok</a>
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Pollo Rico. Todos los derechos reservados.</p>
   </footer>
 
   <script>
-    const btn = document.getElementById('toggleSecciones');
-    const secciones = document.getElementById('secciones');
-    btn.addEventListener('click', () => {
-      secciones.classList.toggle('oculto');
+    const boton = document.getElementById("mostrarMenu");
+    const menu = document.getElementById("menuOpciones");
+
+    boton.addEventListener("click", () => {
+      menu.classList.toggle("oculto");
     });
   </script>
 </body>
 </html>
+
 
