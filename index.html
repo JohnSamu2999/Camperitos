@@ -39,18 +39,17 @@
   </footer>
 
  <script>
-  document.getElementById("mostrarMenu").addEventListener("click", function() {
-    var menu = document.getElementById("menu");
-    if (menu.classList.contains("menu-oculto")) {
-      menu.classList.remove("menu-oculto");
-      menu.classList.add("menu-visible");
-    } else {
-      menu.classList.remove("menu-visible");
-      menu.classList.add("menu-oculto");
-    }
+  document.addEventListener("DOMContentLoaded", function() {
+    const boton = document.getElementById("mostrarMenu");
+    const menu = document.getElementById("menu");
+
+    boton.addEventListener("click", function () {
+      menu.classList.toggle("menu-oculto");
+      menu.classList.toggle("menu-visible");
+    });
   });
 </script>
-  </script>
+
 </body>
 </html>
 
