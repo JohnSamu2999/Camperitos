@@ -1,166 +1,104 @@
-/* Estilos generales */
 body {
-  background-color: #fffde8;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fffbe6;
   margin: 0;
-  font-family: sans-serif;
+  padding: 0;
+  color: #333;
 }
 
-/* Encabezado */
-.encabezado {
-  background-color: #f8c300;
-  padding: 10px;
-}
-
-.logo {
-  height: 40px;
-}
-
-/* Botón hamburguesa */
-.hamburguesa {
-  font-size: 28px;
-  background: none;
-  border: none;
-  cursor: pointer;
-  position: absolute;
-  top: 20px;
-  right: 20px;
-}
-
-/* Menú hamburguesa */
-.menu {
+header {
   display: flex;
-  flex-direction: column;
-  background-color: #f8c300;
-  position: absolute;
-  right: 20px;
-  top: 60px;
-  padding: 10px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px #999;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
 }
 
-.menu-oculto {
-  display: none;
-}
-
-.menu-visible {
-  display: flex;
-}
-
-/* Imagen del banner con altura reducida */
-.banner-img {
+.banner img {
   width: 100%;
-  max-height: 200px;
+  height: auto;
   object-fit: cover;
+  max-height: 300px;
 }
 
-/* Sección de selección de comida */
-.seleccion-comida {
-  padding: 30px 20px;
+h2 {
+  font-size: 1.5em;
+  margin: 30px 0 10px 20px;
+  color: #111;
 }
 
-.seleccion-comida h2 {
-  text-align: center;
-  font-size: 26px;
-  margin-bottom: 20px;
-}
-
-/* Tarjetas en fila (horizontal) */
-.tarjetas {
+.menu-contenedor {
   display: flex;
   justify-content: center;
   gap: 20px;
   flex-wrap: wrap;
-  padding: 0 20px;
+  padding: 20px;
 }
 
-.tarjeta {
-  background: #fff3d1;
+.menu-item {
+  background-color: #fff1c1;
   border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  overflow: hidden;
-  text-align: center;
-  transition: transform 0.2s;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
   width: 280px;
+  transition: transform 0.3s ease;
+  text-align: center;
 }
 
-.tarjeta:hover {
-  transform: scale(1.03);
+.menu-item:hover {
+  transform: translateY(-5px);
 }
 
-.tarjeta img {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
+.menu-item img {
+  width: 150px;
+  height: auto;
+  margin-top: 15px;
 }
 
-.info {
-  padding: 15px;
-}
-
-/* Botones */
-.btn {
+.menu-item h3 {
+  margin: 10px 0 5px;
+  font-size: 1.1em;
   font-weight: bold;
-  padding: 10px;
+}
+
+.menu-item p {
+  margin: 5px 20px 15px;
+  font-size: 0.95em;
+}
+
+.menu-item button {
+  background-color: #4caf50;
+  color: white;
   border: none;
   border-radius: 6px;
+  padding: 8px 15px;
+  margin-bottom: 15px;
   cursor: pointer;
+  font-size: 0.9em;
 }
 
-.btn.verde {
-  background-color: #3c763d;
-  color: white;
+.menu-item button:hover {
+  background-color: #3e8e41;
 }
 
-.btn.verde:hover {
-  background-color: #2e5a2f;
-}
-
-.btn.naranja {
-  background-color: #f4511e;
-  color: white;
-}
-
-.btn.naranja:hover {
-  background-color: #d63b0e;
-}
-
-/* Footer */
-.pie {
-  background-color: #d9c93f;
-  padding: 20px;
+footer {
+  margin-top: 50px;
+  background-color: #d9c700;
   text-align: center;
+  padding: 20px;
+  font-size: 0.9em;
 }
 
-.texto-footer {
-  margin-bottom: 10px;
-  font-size: 16px;
-}
-
-.registro-footer {
-  margin: 10px 0;
-}
-
-.registro-footer input[type="email"] {
-  padding: 10px;
-  border: none;
+footer input[type="text"] {
+  padding: 6px;
+  border: 1px solid #ccc;
   border-radius: 4px;
-  width: 200px;
-  max-width: 80%;
 }
 
-.legales {
-  margin-top: 10px;
-  font-size: 14px;
-}
-
-.legales a {
-  color: #333;
-  text-decoration: none;
-  margin: 0 5px;
-}
-
-.legales a:hover {
-  text-decoration: underline;
+footer button {
+  background-color: #ff5722;
+  border: none;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
